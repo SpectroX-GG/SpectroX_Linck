@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Links oficiais do SpectroX: grupo do jogo, Instagram, TikTok e X-Zone.">
+  <title>SpectroX Links</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      text-align: center;
+      background: black;
+      overflow-x: hidden;
+    }
+
+    /* Fundo animado de estrelas */
+    #stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: black;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 2s infinite ease-in-out, move 20s linear infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 0.2; }
+    }
+
+    @keyframes move {
+      from { transform: translateY(0); }
+      to { transform: translateY(100vh); }
+    }
+
+    /* Logo circular com néon leve */
+    .logo {
+      display: block;
+      margin: 30px auto 20px auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      animation: float 3s ease-in-out infinite, neonPulse 2s infinite alternate;
+      filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 15px #fff);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes neonPulse {
+      0% { filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 15px #fff); }
+      50% { filter: drop-shadow(0 0 12px #fff) drop-shadow(0 0 22px #fff); }
+      100% { filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 15px #fff); }
+    }
+
+    /* Texto com néon suave */
+    h1 {
+      font-size: 2.5em;
+      margin: 0 0 20px 0;
+      color: #fff;
+      display: block;
+      padding: 10px 20px;
+      border-radius: 15px;
+      text-shadow: 
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff;
+      animation: textGlow 2s infinite alternate;
+    }
+
+    @keyframes textGlow {
+      0% { text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff; }
+      50% { text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff; }
+      100% { text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff; }
+    }
+
+    /* Caixa de aviso sobre compatibilidade */
+    .notice {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff;
+      border-radius: 15px;
+      padding: 15px 20px;
+      font-size: 1em;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 500px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+      padding: 12px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .link-btn img {
+      margin-left: 10px;
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
+    }
+
+    /* Botões com efeito de aproximação e brilho */
+    .link-btn:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    /* Botões individuais */
+    .whatsapp { background: #25D366; color: #fff; }
+    .instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); color: #fff; }
+    .tiktok { background: linear-gradient(45deg, #25F4EE, #FF0050); color: #fff; }
+    .xzone { background: linear-gradient(45deg, #007BFF, #FF0000); color: #fff; }
+
+    @media (max-width: 600px) {
+      .logo { width: 90px; height: 90px; }
+      h1 { font-size: 1.8em; padding: 8px 16px; }
+      .notice { font-size: 0.9em; width: 90%; padding: 10px 15px; }
+      .link-btn { width: 90%; font-size: 1em; }
+      .links { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="stars"></div>
+
+  <img src="https://i.ibb.co/4nTyCFhk/image.png" alt="SpectroX Logo" class="logo">
+  <h1>SpectroX Links</h1>
+
+  <div class="notice">
+    ⚠️ O jogo foi desenvolvido para versões mais antigas do Android. Alguns dispositivos mais recentes, como Android 15 ou 16, podem não ser compatíveis. ⚠️
+  </div>
+  
+  <div class="links">
+    <a class="link-btn whatsapp" href="https://chat.whatsapp.com/JgMdaMoNjG7HpVZSLOLZ8Q" target="_blank" rel="noopener noreferrer">
+      Entrar no grupo do criador do jogo
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="link-icon">
+    </a>
+
+    <a class="link-btn instagram" href="https://www.instagram.com/elinsberg_?igsh=Y2szcmR0MjJwY29u" target="_blank" rel="noopener noreferrer">
+      Meu Instagram pessoal
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="link-icon">
+    </a>
+
+    <a class="link-btn tiktok" href="https://www.tiktok.com/@sr_spectro_?_t=ZM-90GqNphKdk8&_r=1" target="_blank" rel="noopener noreferrer">
+      Meu TikTok
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" class="link-icon">
+    </a>
+
+    <a class="link-btn xzone" href="https://x-zone.online/" target="_blank" rel="noopener noreferrer">
+      X-Zone
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="X-Zone" class="link-icon">
+    </a>
+  </div>
+
+  <script>
+    // Gerar estrelas aleatórias
+    const stars = document.getElementById('stars');
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.opacity = Math.random() * 0.8 + 0.2;
+      star.style.animationDuration = (Math.random() * 3 + 2) + 's, ' + (Math.random() * 40 + 20) + 's';
+      stars.appendChild(star);
+    }
+  </script>
+</body>
+</html>
